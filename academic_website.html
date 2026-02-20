@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research </title>
+    <!-- Laboratory for Control, Optimization, and Power -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            min-height: 100vh;
+        }
+
+        /* Sidebar Navigation */
+        .sidebar {
+            width: 150px;
+            background-color: #f8f9fa;
+            /* background-color: #eb4545; */
+            border-right: 1.5px solid #dee2e6;
+            padding: 20px 0;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            margin-bottom: 3px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 4px 20px;
+            color: #4a90e2;
+            /* color: #eb4545; */
+            text-decoration: none;
+            font-size: 16px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .sidebar a:hover {
+            background-color: #e9ecef;
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 20px 30px;
+        }
+
+        .header {
+            margin-bottom: 20px;
+
+        }
+
+        .header h1 {
+            color: #4a90e2;
+            font-size: 28px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .header hr {
+            border: none;
+            /* height: 1px; */
+            border-top: 3px double #ccc;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            margin-top: -10px;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 10px;
+            align-items: flex-start;
+        }
+
+        .profile-image {
+            width: 220px;
+            height: 280px;
+            object-fit: cover;
+            border: 1px solid #ddd;
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-info h2 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .profile-info p {
+            margin-bottom: 8px;
+            font-size: 16px;
+            line-height: 1.4;
+        }
+
+        .profile-info strong {
+            font-weight: bold;
+        }
+    
+        /* Biography Section */
+        .biography {
+            margin-bottom: 0px;
+        }
+
+        .biography h2 {
+            color: #4a90e2;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 10px;
+            /* margin-bottom: -100px; */
+        }
+
+        .biography p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .biography hr {
+            border: None;
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            margin-top: -10px;
+        }
+
+        /* News Section */
+        .news {
+            margin-bottom: 10px;
+        }
+
+        .news h2 {
+            color: #4a90e2;
+            font-size: 20px;
+            font-weight: normal;
+            margin-bottom: 10px;
+        }
+
+        .news hr {
+            border: None;
+            height: 1px;
+            background-color: #ccc;
+            margin-bottom: 10px;
+            margin-top: -10px;
+        }
+
+        .news ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .news li {
+            margin-bottom: 5px;
+            font-size: 16px;
+            line-height: 1.5;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        .news li::before {
+            content: "■";
+            color: #333;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .news a {
+            color: #4a90e2;
+            text-decoration: none;
+        }
+
+        .news a:hover {
+            text-decoration: underline;
+        }
+
+        .news .date {
+            font-weight: bold;
+        }
+        .news p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                display: flex;
+                overflow-x: auto;
+            }
+
+            .sidebar ul {
+                display: flex;
+                white-space: nowrap;
+            }
+
+            .sidebar li {
+                margin-right: 10px;
+                margin-bottom: 0;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 180px;
+                height: 220px;
+            }
+
+            .main-content {
+                padding: 15px 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- Sidebar Navigation -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="academic_website.html">Home</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="honors.html">Awards and Honors</a></li>
+                <li><a href="course.html">Courses and Teaching</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <h1>Welcome to Peng Zhang's Homepage</h1>
+                <hr>
+            </header>
+
+            <!-- Profile Section -->
+            <section class="profile-section">
+                <img src="headshot.JPG" style="width: 150px !important; height: 200px !important;"
+                alt="Peng Zhang" class="profile-image">
+                <div class="profile-info">
+                    <p> I am currently a first-year PhD student in the Department of Electrical and Computer Engineering at University of Wisconsin-Madison. 
+                        I am very fortune to be co-advised by 
+                        <a href="https://sites.google.com/view/manish-k-singh/home">Prof. Manish K. Singh</a> and
+                        <a href="https://engineering.wisc.edu/directory/profile/line-roald/">Prof. Line A. Rolad</a>. My research
+                        focuses on characterizing the informativity of heterogeneous measurements from distribution networks and data centers,
+                        to achieve efficient and reliable frameworks of planning, monitoring, analyzing and controling. Our methods are grounded
+                        in the intersection of optimization and control theory (e.g. inverse optimization, sensitivity analysis 
+                        and observability/controllability) and power systems analysis (e.g. optimal power flow).
+                    <!-- <h2>Peng Zhang</h2> -->
+                    <p>Previously, I received M.S. degress in Electrical Engineering 
+                        from the University of Washington (It is also a UW!), where I was honored to work with 
+                        <a href="https://zhangbaosen.github.io/">Prof. Baosen Zhang</a>. My research concentrated on the online voltage
+                         control for distribution systems under model inaccuracies, where we designed disturbance-action controllers for 
+                         and online exponential barrier method for 
+                    </p> 
+                    <p>
+                    Prior to arriving in the US, I received B.Eng. degree (with honors) in Electrical Engineering from North China
+                    Electric Power University. During my spare time, I enjoyed traveling and playing soccer and basketball.
+                    </p>
+                    <p>
+                       <strong>Email:</strong> pzhang286 (at) wisc.edu
+                    </p>
+                    <p>
+                       [<a href="https://www.linkedin.com/in/pengz-abc0811/"><strong>LinkedIn</strong></a>], 
+                       [<a href="https://github.com/pengzhang233/pengzhang233.github.io/blob/main/CV_Peng_2026.pdf"><strong>CV</strong></a>]
+                    </p>
+                </div>
+            </section>
+            <!-- Research Interest Section -->
+            <section class="news">
+                <h2>Research  Interests</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <span class="date">Optimization </span>, <span class="date">Control </span>, <span class="date">Power System Analysis </span>
+                    </li>
+                    <!-- <li>
+                        <span class="date">Control </span>: Stability
+                    </li> -->
+                    <!-- <p>Peng Zhang works on various interdisciplinary problems in 
+                    control theory, optimization theory, power systems, and machine learning.</p>
+                <p><img src="ELECCOMPEN_color-center.png" alt="UW-Madison" class="logo" loading="lazy"></p> -->
+                <!-- <p> <img src="icons8-google-scholar-50.png" style="width: 20px !important; height: 20px !important;" 
+                    alt = google scholar class="inline-icorns" loading="lazy"></p>
+                <p> See <a href="https://arxiv.org/abs/2412.00629">publications here <img src="icons8-google-scholar-50.png" style="width: 20px !important; height: 20px !important;" 
+                    alt = google scholar class="inline-icorns" loading="lazy"></a></p>
+                    The above shows how to add hyberlink to the logos -->
+                </ul>
+            </section>
+
+            <!-- <section class="news">
+                <h2>Contact Me</h2>
+                <li><strong>Email:</strong> pzhang286 AT wisc.edu </li> -->
+            </section>
+            <!-- News Section -->
+            <section class="news">
+                <h2>News</h2>
+                <hr>
+                <ul>
+                    <li>
+                        <span class="date">October 2025:</span> Presented our paper "<a href="https://arxiv.org/abs/2506.10247">
+                            Optimal Voltage Control Using Online Exponential Barrier Method</a>" at NAPS 2025, 
+                            Hartford, CT. [<a href="https://github.com/pengzhang-wisc/pengzhang233.github.io/blob/main/Slides_NAPS2025_Peng.pdf">Slides</a>]
+                    </li>
+                    <li>
+                        <span class="date">September 2025:</span> Kicked off my new journey at UW-Madison. Go Badgers!
+                    </li>
+                    <li>
+                        <span class="date">July 2025:</span> Presented our work "<a href="https://arxiv.org/abs/2412.00629">
+                            Online Voltage Regulation of Distribution Systems with Disturbance-Action Controllers</a>" at
+                            PES General Meeting 2025, Austin, TX. [<a href="https://github.com/pengzhang-wisc/personal_website/blob/main/PESGM%20Student%20Poster_v2.pdf">Poster</a>]
+                    </li>
+                    <li>
+                        <span class="date">June 2025:</span> Concluded my Master study at UW. It was my great honor to work with
+                        Prof. Baosen Zhang. [<a href="https://github.com/pengzhang-wisc/pengzhang233.github.io/blob/main/UW1.JPG" target="_blank">Picture1</a>]
+                        [<a href="https://github.com/pengzhang-wisc/pengzhang233.github.io/blob/main/UW2.JPG">Picture2</a>]
+                    </li>
+                    <!-- <li>
+                        <span class = "date"> January 2025:</span> I am excited to attend Grid X AI at San Jose, CA. 
+                    </li> -->
+                    <li>
+                        <span class = "date"> August 2024:</span> Wrapped up my internship at GE Vernova, Bothell, WA. 
+                        As a digital technology intern, I was exicted to learn enterprise-grade software
+                         for smart grid management and utility operations.
+                    </li>
+                    <li>
+                        <span class = "date"> September 2023:</span> Started my graudated study at UW. Go Huskies!
+                    </li>
+                    <li>
+                        <span class = "date"> June 2023:</span> Completed my undergraduate study at NCEPU and defended 
+                        my thesis "High-Resolution Spatiotemporal Assessment of Onshore and Offshore Wind Energy and Long-Term
+                        System Planing"
+                    </li>
+                </ul>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
